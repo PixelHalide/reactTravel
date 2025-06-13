@@ -1,20 +1,37 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Dropdown from './Dropdown'
+import logo from '../assets/react.svg'
 
 const Navbar = () => {
+
+  const [dropdown, set_dropdown] = useState(false);
   return (
-    <div className=''>
+    <div className='sticky top-0 z-30'>
         <nav className="flex flex-col md:flex-row justify-between gap-8 mb-5 pt-2 px-15">
-            <img src="src/assets/react.svg"></img>
-              <div className='flex flex-row justify-center'>
+            <img src={logo} alt="Logo" />
+              <div className='flex flex-col md:flex-row justify-center'>
                 <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
                   <Link to="/" className="text-lg py-1 px-4 rounded transition-all">
                     Home
                   </Link>
                 </div>
-                <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
-                  <span className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
-                    Trending
-                  </span>
+                <div className='relative hover:bg-gray-200 p-2 rounded-2xl transition duration-200'
+                  onMouseEnter={() => set_dropdown(true)}
+                  onMouseLeave={() => set_dropdown(false)}>
+                    <span className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
+                      Trending
+                    </span>
+                    <div
+                      className={`absolute left-1/2 -translate-x-1/2 mt-2 w-40 z-100 ${
+                        dropdown ? 'pointer-events-auto' : 'pointer-events-none'
+                      }`}>
+                        <div className={`transition-all duration-200 ease-in-out transform ${dropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'} bg-white shadow-lg rounded-lg`}>
+                          {dropdown && (
+                            <Dropdown contents={["Shibuya", "Nagoya", "Kyoto"]} />
+                          )}
+                        </div>
+                    </div>
                 </div>
                 <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
                   <Link to="/contact" className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
@@ -27,8 +44,8 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-            <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
-              <Link to="/gpaCalc" className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
+            <div className='hover:bg-neutral-900 p-2 rounded-2xl transition duration-200 bg-black text-white cursor-pointer'>
+              <Link to="/gpaCalc" className="text-lg py-1 px-4 rounded transition-all">
                 Sign Up/In
               </Link>
             </div>
