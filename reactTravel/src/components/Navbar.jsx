@@ -5,12 +5,13 @@ import logo from '../assets/react.svg'
 
 const Navbar = () => {
 
+  const Trending = ["Shibuya", "Nagoya", "Kyoto"];
   const [dropdown, set_dropdown] = useState(false);
   return (
-    <div className='sticky top-0 z-30'>
-        <nav className="flex flex-col md:flex-row justify-between gap-8 mb-5 pt-2 px-15">
+    <div className='sticky top-0 z-30 bg-white border-gray-300 border-b-2'>
+        <nav className="flex flex-col md:flex-row justify-between items-center gap-8 mb-5 pt-2 px-4">
             <img src={logo} alt="Logo" />
-              <div className='flex flex-col md:flex-row justify-center'>
+              <div className='flex flex-col md:flex-row justify-center items-center'>
                 <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
                   <Link to="/" className="text-lg py-1 px-4 rounded transition-all">
                     Home
@@ -28,7 +29,7 @@ const Navbar = () => {
                       }`}>
                         <div className={`transition-all duration-200 ease-in-out transform ${dropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'} bg-white shadow-lg rounded-lg`}>
                           {dropdown && (
-                            <Dropdown contents={["Shibuya", "Nagoya", "Kyoto"]} />
+                            <Dropdown contents={Trending} />
                           )}
                         </div>
                     </div>
