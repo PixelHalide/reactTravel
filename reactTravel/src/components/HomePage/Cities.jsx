@@ -11,24 +11,28 @@ const dummyData = [
     name: 'Kokotel Hakodate',
     rating: 3.8,
     reviews: 23,
+    badge: null,
   },
   {
     image: atlantis,
     name: 'Atlantis Dubai',
     rating: 4.8,
     reviews: 1023,
+    badge: 'Top Pick!',
   },
   {
     image: nora,
     name: 'Nora Buri Resort & Spa',
     rating: 4.5,
     reviews: 2145,
+    badge: 'Hot!',
   },
   {
     image: royal,
     name: 'Royal Phuket City Hotel',
     rating: 3.5,
     reviews: 340,
+    badge: null,
   },
 ];
 const Cities = () => {
@@ -38,7 +42,7 @@ const Cities = () => {
   return (
     <div className="text-2xl mt-6 ml-16">
         Hotels that'll make you feel at home
-      <div className="flex flex-wrap justify-center gap-6 p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
 
         {dummyData.map((hotel, index) => (
         <HotelCard
@@ -47,6 +51,7 @@ const Cities = () => {
           hotelName={hotel.name}
           hotelRating={hotel.rating}
           hotelReviews={hotel.reviews}
+          badgeText={hotel.badge}
           onClick={() => handleClick(hotel.name)}
         />
         ))}
