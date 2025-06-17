@@ -1,4 +1,4 @@
-import Form from "../components/Form.jsx";
+import Form from "./Form.jsx";
 
 function Contact() {
   const handleFormSubmit = (data) => {
