@@ -1,4 +1,4 @@
-import italyImageUrl from '../assets/italywide.jpg';
+import italyImageUrl from '../../assets/italywide.jpg';
 
 const TopBanner = () => {
   return (
