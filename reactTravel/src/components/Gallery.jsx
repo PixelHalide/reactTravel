@@ -1,4 +1,4 @@
-
+import greece from '../assets/greece.jpeg'
 
 const Gallery = () => {
   return (
@@ -11,7 +11,7 @@ const Gallery = () => {
             <div className="ml-145 text-xl absolute bottom-5 right-0 m-2 text-gray-900 font-bold max-w-[80%] text-right break-words">
                 <p>Book Today - Don't miss your chance!</p>
             </div>
-            <img src="src/assets/greece.jpeg" width={562.5} height={375} className="border-black border-4 rounded-2xl" />
+            <img src={greece} width={562.5} height={375} className="border-black border-4 rounded-2xl" />
         </div>
     </div>
   )
