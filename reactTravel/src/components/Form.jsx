@@ -35,8 +35,10 @@ function Form ({onSubmit}) {
             onChange={(e) => setMessage(e.target.value)}
         />
 
-        <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded">
-            Submit
+        <button type="submit" 
+        className="bg-green-600 hover:bg-green-700 transition-transform duration-300 hover:scale-108 shadow-lg px-4 py-2 rounded text-white"
+        >
+        Submit
         </button>
 
     </form>
