@@ -28,6 +28,13 @@ function Form ({onSubmit}) {
             onChange={(e) => setEmail(e.target.value)}
         />
 
+        <label className="block mb-2">Message</label>
+        <textarea
+            className="border p-2 w-full mb-4"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+        />
+
         <button type="submit" className="bg-blue-600 text-white py-2 px-4 rounded">
             Submit
         </button>

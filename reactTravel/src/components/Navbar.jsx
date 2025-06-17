@@ -35,13 +35,13 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
-                  <Link to="/contact" className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
-                    Contact Us
+                  <Link to="/about" className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
+                    About Us
                   </Link>
                 </div>
                 <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
-                  <Link to="/about" className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
-                    About Us
+                  <Link to="/contact" className="text-lg py-1 px-4 rounded hover:text-gray-700 transition-all">
+                    Contact Us
                   </Link>
                 </div>
               </div>
