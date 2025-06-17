@@ -1,10 +1,10 @@
-import TopBanner from "./TopBanner"
+import TopBanner from "./TopBanner.jsx"
 import Cities from "./Cities"
-import Gallery from "./Gallery"
+import Gallery from "./Gallery.jsx"
 import HotelCard from "./HotelCard.jsx"
-import atlantis from '../assets/atlantisDubai.webp'
-import nora from '../assets/nora.jpg'
-import royal from '../assets/royal.jpg'
+import atlantis from '../../assets/atlantisDubai.webp'
+import nora from '../../assets/nora.jpg'
+import royal from '../../assets/royal.jpg'
 
 const dummyData = [
     {
