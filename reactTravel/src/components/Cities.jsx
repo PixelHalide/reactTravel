@@ -1,4 +1,4 @@
-import HotelCard from "./HotelCard"
+
 
 const Cities = () => {
   return (

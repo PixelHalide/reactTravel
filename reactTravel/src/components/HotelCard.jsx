@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import atlantis from '../assets/atlantisDubai.webp'
 
 function HotelCard ({ hotelImage, hotelName, hotelRating, hotelReviews, onClick }) {
-  
+
   const[liked, setLiked] = useState(false);
-  
+
   return (
     <div
     className='cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all bg-white w-full max-w-xs'

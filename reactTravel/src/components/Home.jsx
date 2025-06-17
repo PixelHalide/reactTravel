@@ -3,17 +3,24 @@ import Cities from "./Cities"
 import Gallery from "./Gallery"
 import HotelCard from "./HotelCard.jsx"
 import atlantis from '../assets/atlantisDubai.webp'
-import nora from '../assets/nora buri resort spa.jpg'
+import nora from '../assets/nora.jpg'
+import royal from '../assets/royal.jpg'
 
 const dummyData = [
+    {
+    image: atlantis,
+    name: 'Atlantis Dubai',
+    rating: 4.8,
+    reviews: 1023,
+  },
   {
-    image: {nora},
+    image: nora,
     name: 'Nora Buri Resort & Spa',
     rating: 4.5,
     reviews: 2145,
   },
   {
-    image: 'https://source.unsplash.com/400x300/?hotel,city',
+    image: royal,
     name: 'Royal Phuket City Hotel',
     rating: 3.5,
     reviews: 340,
@@ -32,17 +39,9 @@ function Home () {
     <Cities />
 
     <div className="flex flex-wrap justify-center gap-6 p-6">
-      
-      <HotelCard 
-      hotelImage={atlantis}
-      hotelName="Atlantis Dubai" 
-      hotelRating={4.8}
-      hotelReviews={1023}
-      onClick={() => alert('Clicked Atlantis')}
-      />
-      
+
       {dummyData.map((hotel, index) => (
-      <HotelCard 
+      <HotelCard
         key={index}
         hotelImage={hotel.image}
         hotelName={hotel.name}
@@ -51,7 +50,7 @@ function Home () {
         onClick={() => handleClick(hotel.name)}
       />
       ))}
-      
+
     </div>
     </>
   )
