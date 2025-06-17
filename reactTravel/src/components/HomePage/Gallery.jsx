@@ -1,4 +1,4 @@
-import greece from '../assets/greece.jpeg'
+import greece from '../../assets/greece.jpeg'
 
 const Gallery = () => {
   return (
