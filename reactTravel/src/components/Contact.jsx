@@ -3,7 +3,7 @@ import Form from "../components/Form.jsx";
 function Contact() {
   const handleFormSubmit = (data) => {
     console.log('Form submitted:', data);
-    alert(`Thanks ${data.name}, we'll get back to you soon`);
+    alert(`Thanks, we'll get back to you soon`);
   };
 
   return (
