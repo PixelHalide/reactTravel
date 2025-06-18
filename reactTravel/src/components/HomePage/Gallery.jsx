@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 
 import greece from '../../assets/greece.jpeg'
 import chile from '../../assets/chile.webp'
+import mit from '../../assets/mit.png'
 
 const Gallery = () => {
 
-  const imageArray = [greece, chile]
+  const imageArray = [greece, chile, mit]
   const [imageIndex, set_index] = useState(0);
 
   useEffect(() => {
@@ -20,8 +21,8 @@ const Gallery = () => {
 
   return (
     <div className="flex justify-center relative transition-all mt-10">
-        <div className="p-5 w-290 h-105 bg-red-400 rounded-md relative text-wrap">
-            <div className="ml-145 text-2xl sm:text-4xl md:text-7xl absolute md:top-0 right-0 m-2 text-gray-900 font-bold max-w-[80%] text-right break-words">
+        <div className="p-5 w-275 h-105 bg-red-400 rounded-md relative text-wrap">
+            <div className="ml-145 text-2xl md:text-5xl lg:text-7xl absolute md:top-0 right-0 m-2 text-gray-900 font-bold max-w-[80%] text-right break-words">
                 <p>We fullfil dreams.</p>
                 <p>Experience the Unforgettable.</p>
             </div>
