@@ -9,7 +9,7 @@ const Navbar = () => {
   const [dropdown, set_dropdown] = useState(false);
   return (
     <div className='sticky top-0 z-30 bg-[#EEEEEE] border-gray-300 border-b-2'>
-        <nav className="flex flex-col md:flex-row justify-between items-center gap-8 mb-5 pt-2 px-4">
+        <nav className="flex flex-col md:flex-row justify-between items-center gap-8 mb-2 pt-2 px-4">
             <div className='flex flex-row'>
               <img src={logo} alt="Logo" />
               <p className='font-prompt font-extrabold text-4xl mx-4'>Travellr.</p>
