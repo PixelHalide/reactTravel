@@ -1,4 +1,3 @@
-import Footer from "./HomePage/Footer.jsx";
 
 function About() {
   return (
