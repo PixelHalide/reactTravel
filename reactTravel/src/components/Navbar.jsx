@@ -10,7 +10,10 @@ const Navbar = () => {
   return (
     <div className='sticky top-0 z-30 bg-[#EEEEEE] border-gray-300 border-b-2'>
         <nav className="flex flex-col md:flex-row justify-between items-center gap-8 mb-5 pt-2 px-4">
-            <img src={logo} alt="Logo" />
+            <div className='flex flex-row'>
+              <img src={logo} alt="Logo" />
+              <p className='font-prompt font-extrabold text-4xl mx-4'>Travellr.</p>
+            </div>
               <div className='flex flex-col md:flex-row justify-center items-center'>
                 <div className='hover:bg-gray-200 p-2 rounded-2xl transition duration-200'>
                   <Link to="/" className="text-lg py-1 px-4 rounded transition-all">

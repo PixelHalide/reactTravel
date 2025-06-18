@@ -6,7 +6,7 @@ function About() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold mb-6">About Us</h1>
         <p className="text-lg mb-4">
-          Welcome to <strong>(Travel Project)</strong> — your ultimate travel companion! 🌍
+          Welcome to <strong>(Travellr.)</strong> — your ultimate travel companion! 🌍
         </p>
         <p className="mb-4">
           We are passionate explorers committed to helping you discover the best destinations, curated hotels, and unforgettable experiences. Our platform blends rich content, handpicked recommendations, and responsive design to help you plan every trip effortlessly.
@@ -19,7 +19,7 @@ function About() {
           Bootcamp: Mist WebDev Project – Travel Edition
         </p>
       </div>
-    
+
     </div>
   );
 }
