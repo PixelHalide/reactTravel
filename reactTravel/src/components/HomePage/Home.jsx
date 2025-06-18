@@ -1,7 +1,7 @@
 import TopBanner from "./TopBanner.jsx"
-import Cities from "./Cities"
+import CardArray from "./CardArray.jsx"
 import Gallery from "./Gallery.jsx"
-import HotelCard from "./HotelCard.jsx"
+import HotelCard from "./LocationCard.jsx"
 
 function Home () {
 
@@ -12,9 +12,8 @@ function Home () {
   return (
     <>
     <TopBanner />
-    <Cities />
-
-
+    <CardArray />
+    <Gallery />
     </>
   )
 }

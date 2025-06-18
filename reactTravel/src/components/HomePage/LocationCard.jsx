@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function HotelCard ({ hotelImage, hotelName, hotelRating, hotelReviews, badgeText, onClick }) {
+function LocationCard ({ Image, Name, Rating, Reviews, badge, onClick }) {
 
   const[liked, setLiked] = useState(false);
 
@@ -11,12 +11,12 @@ function HotelCard ({ hotelImage, hotelName, hotelRating, hotelReviews, badgeTex
     >
 
       <div className='relative'>
-        <img src={hotelImage} alt={hotelName}
+        <img src={Image} alt={Name}
         className='w-full h-48 object-cover hover:opacity-80' />
 
-        {badgeText && (
+        {badge && (
           <div className="absolute top-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded shadow">
-            {badgeText}
+            {badge}
           </div>
         )}
 
@@ -32,10 +32,10 @@ function HotelCard ({ hotelImage, hotelName, hotelRating, hotelReviews, badgeTex
       </div>
 
       <div className='p-4'>
-        <h3 className='font-semibold text-lg mb-1'>{hotelName}</h3>
+        <h3 className='font-semibold text-lg mb-1'>{Name}</h3>
         <div className='flex items-center space-x-2 text-sm text-gray-600'>
-          <span>{hotelRating} ⭐</span>
-          <span>({hotelReviews} reviews)</span>
+          <span>{Rating} ⭐</span>
+          <span>({Reviews} reviews)</span>
         </div>
       </div>
 
@@ -43,4 +43,4 @@ function HotelCard ({ hotelImage, hotelName, hotelRating, hotelReviews, badgeTex
   )
 }
 
-export default HotelCard
+export default LocationCard
