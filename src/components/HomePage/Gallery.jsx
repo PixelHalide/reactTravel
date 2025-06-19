@@ -20,21 +20,23 @@ const Gallery = () => {
   }, [])
 
   return (
-    <div className="flex justify-center relative transition-all mt-10">
-        <div className="p-5 w-275 h-105 bg-red-400 rounded-md relative text-wrap">
-            <div className="ml-145 text-2xl md:text-5xl lg:text-7xl absolute md:top-0 right-0 m-2 text-gray-900 font-bold max-w-[80%] text-right break-words">
-                <p>We fullfil dreams.</p>
-                <p>Experience the Unforgettable.</p>
+    <div className="flex justify-center relative transition-all mt-10 px-4">
+        <div className="p-5 w-275 bg-red-400 rounded-md relative overflow-x-auto">
+            <div className="text-center md:absolute md:top-0 md:right-0 md:m-2 md:text-right md:max-w-[50%] mb-4 md:mb-0">
+                <p className="text-xl md:text-3xl lg:text-7xl text-gray-900 font-bold">We fulfill dreams.</p>
+                <p className="text-xl md:text-3xl lg:text-7xl text-gray-900 font-bold">Experience the Unforgettable.</p>
             </div>
-            <div className="ml-145 text-xl absolute bottom-5 right-0 m-2 text-gray-900 font-bold max-w-[80%] text-right break-words">
-                <p>Book Today - Don't miss your chance!</p>
-            </div>
-           <div className="w-[562.5px] h-[375px] border-black border-4 rounded-2xl overflow-hidden">
+
+            <div className="w-[562.5px] h-[375px] mx-auto md:mx-0 border-black border-4 rounded-2xl overflow-hidden">
               <img
                 src={imageArray[imageIndex]}
-                alt="Dynamic content image"
+                alt="Image Gallery"
                 className="w-full h-full object-cover"
               />
+            </div>
+
+            <div className="text-center md:absolute md:bottom-5 md:right-0 md:m-2 md:text-right md:max-w-[50%] mt-4 md:mt-0">
+                <p className="text-lg md:text-xl text-gray-900 font-bold">Book Today - Don't miss your chance!</p>
             </div>
         </div>
     </div>
