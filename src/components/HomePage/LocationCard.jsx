@@ -6,7 +6,7 @@ function LocationCard ({ Image, Name, Rating, Reviews, badge, onClick }) {
 
   return (
     <div
-    className='cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-103 transition duration-300 bg-white w-full max-w-xs'
+    className='cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-103 transition duration-300 bg-white w-full'
     onClick={onClick}
     >
 

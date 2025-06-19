@@ -8,7 +8,7 @@ const TopBanner = () => {
           <p className='block'>Redefining Travel -</p>
           <p className='block'>One step at a Time.</p>
           <div className='text-lg md:text-2xl mt-14'>
-            <button class="inline-flex h-12 items-center justify-center rounded-md bg-neutral-950 px-6 font-medium text-neutral-50 transition active:scale-110 cursor-pointer">Find out what's hot</button>
+            <button className="inline-flex h-12 items-center justify-center rounded-md bg-neutral-950 px-6 font-medium text-neutral-50 transition active:scale-110 cursor-pointer">Find out what's hot</button>
           </div>
         </div>
     </div>

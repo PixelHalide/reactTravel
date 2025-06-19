@@ -83,6 +83,23 @@ const Hotels = () => {
         <p className="text-center md:text-left">Places to melt your heart</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
           {cityData.map((hotel, index) => (
+            <LocationCard
+              key={index}
+              Image={hotel.image}
+              Name={hotel.name}
+              Rating={hotel.rating}
+              Reviews={hotel.reviews}
+              badge={hotel.badge}
+              onClick={() => handleClick(hotel.name)}
+            />
+          ))}
+        </div>
+      </div>
+
+      Hotels that'll make you feel at home
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
+
+        {hotelData.map((hotel, index) => (
           <LocationCard
             key={index}
             Image={hotel.image}
@@ -92,23 +109,6 @@ const Hotels = () => {
             badge={hotel.badge}
             onClick={() => handleClick(hotel.name)}
           />
-          ))}
-        </div>
-      </div>
-
-      Hotels that'll make you feel at home
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
-
-        {hotelData.map((hotel, index) => (
-        <LocationCard
-          key={index}
-          Image={hotel.image}
-          Name={hotel.name}
-          Rating={hotel.rating}
-          Reviews={hotel.reviews}
-          badge={hotel.badge}
-          onClick={() => handleClick(hotel.name)}
-        />
         ))}
       </div>
     </div>
