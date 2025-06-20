@@ -10,7 +10,7 @@ const Navbar = ({switchTheme, darkState}) => {
   const [dropdown, set_dropdown] = useState(false);
 
   return (
-    <div className='sticky top-0 z-30 bg-[#EEEEEE] dark:bg-[#212121] dark:text-neutral-200 border-gray-300 border-b-2'>
+    <div className='sticky top-0 z-30 bg-[#EEEEEE] dark:bg-[#212121] dark:text-neutral-200 border-[#383838] dark:border-gray-300 border-b-2'>
         <nav className="flex flex-wrap flex-col md:flex-row justify-between items-center mb-2 pt-2 px-4 text-sm md:text-lg">
             <Link to="/">
               <div className='flex flex-row'>
