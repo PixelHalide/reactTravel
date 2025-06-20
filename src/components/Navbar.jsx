@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 import Dropdown from './Dropdown'
 import logo from '../assets/react.svg'
 
-const Navbar = () => {
+const Navbar = ({switchTheme}) => {
 
   const Trending = ["Shibuya", "Nagoya", "Kyoto"];
   const [dropdown, set_dropdown] = useState(false);
+
   return (
     <div className='sticky top-0 z-30 bg-[#EEEEEE] dark:bg-[#212121] dark:text-neutral-200 border-gray-300 border-b-2'>
         <nav className="flex flex-col md:flex-row justify-between items-center gap-8 mb-2 pt-2 px-4">
@@ -50,10 +51,10 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-            <div className='hover:bg-neutral-900 p-2 rounded-2xl transition duration-200 bg-black text-white dark:hover:text-neutral-200 dark:text-black dark:bg-white cursor-pointer'>
-              <Link to="/gpaCalc" className="text-lg py-1 px-4 rounded transition-all">
-                Sign Up/In
-              </Link>
+            <div className='hover:bg-neutral-900 px-2 py-1.5 rounded-2xl transition duration-200 bg-black text-white dark:hover:text-neutral-200 dark:text-black dark:bg-white cursor-pointer'>
+              <div onClick={() => {switchTheme()}} className="text-lg px-4 rounded transition-all active:scale-110">
+                Switch Theme
+              </div>
             </div>
         </nav>
     </div>

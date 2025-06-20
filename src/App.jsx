@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/HomePage/Home';
@@ -6,11 +7,17 @@ import About from './components/About';
 import Footer from './components/HomePage/Footer.jsx';
 
 function App() {
+  const [dark, set_dark] = useState(true);
 
+  const switchTheme = () => {
+    set_dark(!dark);
+  }
   return (
-      <div className='min-h-screen flex flex-col bg-[#EEEEEE] dark:bg-[#181818] dark'>
+      <div className={`min-h-screen flex flex-col bg-[#EEEEEE] dark:bg-[#181818] ${dark ? 'dark' : ''}`}>
         <Router>
-          <Navbar />
+          <Navbar
+          switchTheme={switchTheme}
+          />
           <div className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
