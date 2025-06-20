@@ -8,8 +8,8 @@ import greece from '../../assets/greece.jpeg'
 import venice from '../../assets/italy.jpg'
 import dubai from '../../assets/dubai.avif'
 import phuket from '../../assets/phuket.jpg'
-
-
+import { useState } from 'react';
+import HotelModal from "../Modal/HotelModal.jsx"
 
 const hotelData = [
   {
@@ -74,9 +74,21 @@ const cityData = [
 ]
 
 const Hotels = () => {
-    const handleClick = (name) => {
+  
+  const [selectedHotel, setSelectedHotel] = useState(null); // null means no modal
+
+  const handleCardClick = (hotel) => {
+    setSelectedHotel(hotel);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedHotel(null);
+  };
+
+  const handleClick = (name) => {
     alert(`Clicked on ${name}`)
-  }
+  };
+
   return (
     <div className="text-2xl mt-6 mx-16 dark:text-white">
         <p className="text-center md:text-left ">Places to melt your heart</p>
@@ -89,7 +101,7 @@ const Hotels = () => {
               Rating={hotel.rating}
               Reviews={hotel.reviews}
               badge={hotel.badge}
-              onClick={() => handleClick(hotel.name)}
+              onClick={() => handleCardClick(hotel)}
             />
           ))}
         </div>
@@ -108,8 +120,15 @@ const Hotels = () => {
             onClick={() => handleClick(hotel.name)}
           />
         ))}
+
+        <HotelModal
+          isOpen={!!selectedHotel}
+          onClose={handleCloseModal}
+          hotel={selectedHotel}
+        />
       </div>
     </div>
+
   )
 }
 
