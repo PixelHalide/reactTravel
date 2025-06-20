@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import Dropdown from './Dropdown'
 import dark_logo from '../assets/logo.png'
 import logo from '../assets/logo_black.png'
+import shibuya from '../assets/shibuya.jpg'
+import nagoya from '../assets/nagoya.jpg'
+import kyoto from '../assets/kyoto.jpg'
 
 const Navbar = ({switchTheme, darkState}) => {
 
