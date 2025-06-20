@@ -6,8 +6,33 @@ import logo from '../assets/logo_black.png'
 
 const Navbar = ({switchTheme, darkState}) => {
 
+  const trendingData = [
+    {
+      image: shibuya,
+      name: 'Shibuya',
+      rating: 4.9,
+      reviews: 1892,
+      badge: 'Trending!',
+    },
+    {
+      image: nagoya,
+      name: 'Nagoya',
+      rating: 4.9,
+      reviews: 1967,
+      badge: 'Trending',
+    },
+    {
+      image: kyoto,
+      name: 'Kyoto',
+      rating: 4.9,
+      reviews: 1743,
+      badge: 'Trending',
+    },
+  ]
+
   const Trending = ["Shibuya", "Nagoya", "Kyoto"];
   const [dropdown, set_dropdown] = useState(false);
+  const [selectedCity, setSelectedCity] = useState(null);
 
   return (
     <div className='sticky top-0 z-30 bg-[#EEEEEE] dark:bg-[#212121] dark:text-neutral-200 border-[#383838] dark:border-gray-300 border-b-2'>
