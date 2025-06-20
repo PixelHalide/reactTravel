@@ -17,6 +17,7 @@ function App() {
         <Router>
           <Navbar
           switchTheme={switchTheme}
+          darkState= {dark}
           />
           <div className="flex-grow">
             <Routes>

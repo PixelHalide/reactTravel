@@ -27,7 +27,7 @@ const Gallery = () => {
                 <p className="text-xl md:text-3xl lg:text-7xl text-gray-900 font-bold">Experience the Unforgettable.</p>
             </div>
 
-            <div className="w-[562.5px] h-[375px] mx-auto md:mx-0 border-black border-4 rounded-2xl overflow-hidden">
+            <div className="w-full max-w-[562.5px] aspect-[3/2] md:w-[562.5px] md:h-[375px] mx-auto md:mx-0 border-black border-4 rounded-2xl overflow-hidden">
               <img
                 src={imageArray[imageIndex]}
                 alt="Image Gallery"
