@@ -8,7 +8,7 @@ import Footer from './components/HomePage/Footer.jsx';
 function App() {
 
   return (
-      <div className='min-h-screen flex flex-col'>
+      <div className='min-h-screen flex flex-col bg-[#EEEEEE] dark:bg-[#181818] dark'>
         <Router>
           <Navbar />
           <div className="flex-grow">

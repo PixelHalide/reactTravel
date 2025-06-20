@@ -7,9 +7,9 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center">
       <div>
-        <h2 className="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center dark:text-neutral-200">Contact Us</h2>
         <Form onSubmit={handleFormSubmit} />
       </div>
     </div>

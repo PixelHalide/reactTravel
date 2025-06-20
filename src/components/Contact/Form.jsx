@@ -44,7 +44,7 @@ function Form ({onSubmit}) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="p-4 bg-white rounded shadow max-w-md">
+        <form onSubmit={handleSubmit} className="p-4 bg-white dark:bg-[#383838] dark:text-neutral-200 rounded shadow max-w-md">
             <label className="block mb-2">Name</label>
             <input
                 type="text"

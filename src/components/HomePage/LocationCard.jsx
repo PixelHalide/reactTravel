@@ -6,7 +6,7 @@ function LocationCard ({ Image, Name, Rating, Reviews, badge, onClick }) {
 
   return (
     <div
-    className='cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-103 transition duration-300 bg-white w-full'
+    className='cursor-pointer rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 hover:scale-103 transition duration-300 bg-white dark:bg-[#383838] w-full'
     onClick={onClick}
     >
 
@@ -33,7 +33,7 @@ function LocationCard ({ Image, Name, Rating, Reviews, badge, onClick }) {
 
       <div className='p-4'>
         <h3 className='font-semibold text-lg mb-1'>{Name}</h3>
-        <div className='flex items-center space-x-2 text-sm text-gray-600'>
+        <div className='flex items-center space-x-2 text-sm text-black dark:text-lime-50'>
           <span>{Rating} ⭐</span>
           <span>({Reviews} reviews)</span>
         </div>

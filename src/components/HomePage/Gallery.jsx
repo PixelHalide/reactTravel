@@ -21,7 +21,7 @@ const Gallery = () => {
 
   return (
     <div className="flex justify-center relative transition-all mt-10 px-4">
-        <div className="p-5 w-275 bg-red-400 rounded-md relative overflow-x-auto">
+        <div className="p-5 w-275 bg-red-400 dark:bg-[#A32B4C] rounded-md relative overflow-x-auto">
             <div className="text-center md:absolute md:top-0 md:right-0 md:m-2 md:text-right md:max-w-[50%] mb-4 md:mb-0">
                 <p className="text-xl md:text-3xl lg:text-7xl text-gray-900 font-bold">We fulfill dreams.</p>
                 <p className="text-xl md:text-3xl lg:text-7xl text-gray-900 font-bold">Experience the Unforgettable.</p>

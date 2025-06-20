@@ -78,9 +78,8 @@ const Hotels = () => {
     alert(`Clicked on ${name}`)
   }
   return (
-    <div className="text-2xl mt-6 mx-16">
-      <div>
-        <p className="text-center md:text-left">Places to melt your heart</p>
+    <div className="text-2xl mt-6 mx-16 dark:text-white">
+        <p className="text-center md:text-left ">Places to melt your heart</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
           {cityData.map((hotel, index) => (
             <LocationCard
@@ -94,7 +93,6 @@ const Hotels = () => {
             />
           ))}
         </div>
-      </div>
 
       Hotels that'll make you feel at home
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
