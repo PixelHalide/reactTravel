@@ -18,7 +18,7 @@ function HotelModal({ isOpen, onClose, hotel }) {
             className="absolute top-2 right-2 text-gray-600 hover:text-black text-lg transition-transform-scale-100 hover:scale-105 hover:opacity-80"
             onClick={onClose}
           >
-            ❌ 
+            ❌
           </button>
           <img src={hotel.image} alt={hotel.name} className="rounded-md mb-4 pr-3 w-full h-48 object-cover" />
           <h2 className="text-xl font-bold mb-2">{hotel.name}</h2>
@@ -27,7 +27,7 @@ function HotelModal({ isOpen, onClose, hotel }) {
             <p className="bg-green-500 text-white inline-block px-3 py-1 rounded text-sm">{hotel.badge}</p>
           )}
           <p className="mt-4 text-sm text-gray-700 dark:text-neutral-200">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enchanting hotel with an unforgettable experience.
+           {hotel.description}
           </p>
 
           <button

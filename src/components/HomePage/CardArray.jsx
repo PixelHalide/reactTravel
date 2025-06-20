@@ -1,4 +1,3 @@
-
 import LocationCard from "./LocationCard.jsx"
 import atlantis from '../../assets/atlantisDubai.webp'
 import nora from '../../assets/nora.jpg'
@@ -18,6 +17,7 @@ const hotelData = [
     rating: 3.8,
     reviews: 23,
     badge: null,
+    description: 'A cozy hotel in Hakodate, perfect for families and travelers seeking comfort.'
   },
   {
     image: atlantis,
@@ -25,6 +25,7 @@ const hotelData = [
     rating: 4.8,
     reviews: 1023,
     badge: 'Top Pick!',
+    description: 'A luxury resort in Dubai with stunning views and world-class amenities.'
   },
   {
     image: nora,
@@ -32,6 +33,7 @@ const hotelData = [
     rating: 4.5,
     reviews: 2145,
     badge: 'Hot!',
+    description: 'A tropical paradise offering relaxation and beautiful ocean views.'
   },
   {
     image: royal,
@@ -39,6 +41,7 @@ const hotelData = [
     rating: 3.5,
     reviews: 340,
     badge: null,
+    description: 'A centrally located hotel in Phuket, ideal for exploring the city.'
   },
 ];
 
@@ -49,6 +52,7 @@ const cityData = [
     rating: 4.9,
     reviews: 892,
     badge: 'Trending!',
+    description: 'Famous for its whitewashed houses and breathtaking sunsets over the Aegean Sea.'
   },
   {
     image: venice,
@@ -56,6 +60,7 @@ const cityData = [
     rating: 4.7,
     reviews: 1567,
     badge: 'Must Visit',
+    description: 'A romantic city of canals, gondolas, and historic architecture.'
   },
   {
     image: dubai,
@@ -63,6 +68,7 @@ const cityData = [
     rating: 4.6,
     reviews: 743,
     badge: null,
+    description: 'A modern metropolis known for its skyscrapers, shopping, and vibrant nightlife.'
   },
   {
     image: phuket,
@@ -70,6 +76,7 @@ const cityData = [
     rating: 4.4,
     reviews: 456,
     badge: 'Popular',
+    description: 'A tropical island with beautiful beaches and lively local culture.'
   },
 ]
 
@@ -83,10 +90,6 @@ const Hotels = () => {
 
   const handleCloseModal = () => {
     setSelectedHotel(null);
-  };
-
-  const handleClick = (name) => {
-    alert(`Clicked on ${name}`)
   };
 
   return (

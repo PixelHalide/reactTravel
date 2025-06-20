@@ -17,6 +17,7 @@ const Navbar = ({switchTheme, darkState}) => {
       rating: 4.9,
       reviews: 1892,
       badge: 'Trending!',
+      description: 'A vibrant district in Tokyo known for its bustling streets, shopping, and nightlife.'
     },
     {
       image: nagoya,
@@ -24,6 +25,7 @@ const Navbar = ({switchTheme, darkState}) => {
       rating: 4.9,
       reviews: 1967,
       badge: 'Trending',
+      description: 'A modern city famous for its historic castle, museums, and delicious cuisine.'
     },
     {
       image: kyoto,
@@ -31,6 +33,7 @@ const Navbar = ({switchTheme, darkState}) => {
       rating: 4.9,
       reviews: 1743,
       badge: 'Trending',
+      description: 'The cultural heart of Japan, renowned for its temples, gardens, and traditional tea houses.'
     },
   ]
 
