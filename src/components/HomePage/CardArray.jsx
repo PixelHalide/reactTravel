@@ -75,7 +75,7 @@ const cityData = [
 
 const Hotels = () => {
 
-  const [selectedHotel, setSelectedHotel] = useState(null); // null means no modal
+  const [selectedHotel, setSelectedHotel] = useState(null);
 
   const handleCardClick = (hotel) => {
     setSelectedHotel(hotel);
@@ -122,7 +122,7 @@ const Hotels = () => {
         ))}
 
         <HotelModal
-          isOpen={!!selectedHotel}
+          isOpen={selectedHotel}
           onClose={handleCloseModal}
           hotel={selectedHotel}
         />

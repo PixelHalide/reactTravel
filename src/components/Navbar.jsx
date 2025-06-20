@@ -52,7 +52,7 @@ const Navbar = ({switchTheme, darkState}) => {
                 <div className='relative hover:bg-gray-200 p-2 rounded-2xl transition duration-200 dark:hover:text-black'
                   onMouseEnter={() => set_dropdown(true)}
                   onMouseLeave={() => set_dropdown(false)}>
-                    <span className="py-1 px-4 rounded hover:text-gray-700 transition-all">
+                    <span className="py-1 px-4 rounded hover:bg-gray-200 dark:hover:text-gray-700 transition-all">
                       Trending
                     </span>
                     <div
