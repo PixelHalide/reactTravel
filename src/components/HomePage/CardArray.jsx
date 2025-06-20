@@ -74,7 +74,7 @@ const cityData = [
 ]
 
 const Hotels = () => {
-  
+
   const [selectedHotel, setSelectedHotel] = useState(null); // null means no modal
 
   const handleCardClick = (hotel) => {
@@ -117,7 +117,7 @@ const Hotels = () => {
             Rating={hotel.rating}
             Reviews={hotel.reviews}
             badge={hotel.badge}
-            onClick={() => handleClick(hotel.name)}
+            onClick={() => handleCardClick(hotel)}
           />
         ))}
 
