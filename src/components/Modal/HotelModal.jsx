@@ -22,7 +22,7 @@ function HotelModal({ isOpen, onClose, hotel }) {
           </button>
           <img src={hotel.image} alt={hotel.name} className="rounded-md mb-4 pr-3 w-full h-48 object-cover" />
           <h2 className="text-xl font-bold mb-2">{hotel.name}</h2>
-          <p className="text-neutral-200 mb-2">{hotel.rating} ⭐ ({hotel.reviews} reviews)</p>
+          <p className="text-gray-600 dark:text-neutral-200 mb-2">{hotel.rating} ⭐ ({hotel.reviews} reviews)</p>
           {hotel.badge && (
             <p className="bg-green-500 text-white inline-block px-3 py-1 rounded text-sm">{hotel.badge}</p>
           )}
