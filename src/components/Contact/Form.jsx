@@ -27,7 +27,6 @@ function Form ({onSubmit}) {
                 throw new Error(errorData.message || 'Something went wrong on the server.');
             }
 
-            // Handle successful response
             const result = await response.json();
 
             if (onSubmit) {
